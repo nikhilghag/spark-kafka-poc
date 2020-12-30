@@ -23,11 +23,19 @@ object App {
       option("kafka.bootstrap.servers", args(0)).
       option("subscribe", args(1)).
       option("startingOffsets", "earliest").
+      option("kafka.security.protocol", "SASL_SSL").
+      option("sasl.mechanism", "SCRAM-SHA-256").
+      option("sasl.jaas.config", "org.apache.kafka.common.security.scram.ScramLoginModule required username=\"kafkadev\" password=\"I)eVk@fk01\";").
+      option("ssl.truststore.location", "/etc/connect_ts/truststore.jks").
+      option("ssl.truststore.password", "<PASSWORD>").
+      option("ssl.keystore.location", "/etc/connect_ts/keystore.jks").
+      option("ssl.keystore.password", "<PASSWORD>").
+      option("ssl.key.password", "<PASSWORD>").
       load()
 
     import spark.implicits._
     df.selectExpr("CAST(value AS STRING)")
-      .as[(String)]
+        .as[(String)]
 
     df.writeStream
       .format("console")

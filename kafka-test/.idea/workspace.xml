@@ -35,10 +35,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CosmosDbApp">
     <configuration name="App" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="org.example.App" />
       <module name="kafka-test" />
+      <option name="PROGRAM_PARAMETERS" value="D:\DevTools\bin\winutils.exe" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
@@ -49,8 +50,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CosmosDbApp" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.CosmosDbApp" />
+      <module name="kafka-test" />
+      <option name="PROGRAM_PARAMETERS" value="D:\DevTools\" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="Application.CosmosDbApp" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CosmosDbApp" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -85,29 +105,37 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="73" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1609337524703" />
-    <state width="1493" height="431" key="GridCell.Tab.0.bottom" timestamp="1609001736251">
+    <state x="499" y="170" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1612026125389">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="431" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609001736251" />
-    <state width="1493" height="431" key="GridCell.Tab.0.center" timestamp="1609001736251">
+    <state x="499" y="170" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1612026125389" />
+    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612032477319">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="431" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609001736251" />
-    <state width="1493" height="431" key="GridCell.Tab.0.left" timestamp="1609001736250">
+    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1612032477319" />
+    <state width="1493" height="339" key="GridCell.Tab.0.bottom" timestamp="1612032551197">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="431" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609001736250" />
-    <state width="1493" height="431" key="GridCell.Tab.0.right" timestamp="1609001736251">
+    <state width="1493" height="339" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612032551197" />
+    <state width="1493" height="339" key="GridCell.Tab.0.center" timestamp="1612032551197">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="431" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609001736251" />
+    <state width="1493" height="339" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1612032551197" />
+    <state width="1493" height="339" key="GridCell.Tab.0.left" timestamp="1612032551197">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="339" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1612032551197" />
+    <state width="1493" height="339" key="GridCell.Tab.0.right" timestamp="1612032551197">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="339" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612032551197" />
     <state x="279" y="57" key="SettingsEditor" timestamp="1609337244091">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="279" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1609337244091" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1609338346386">
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1612031371957">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1609338346386" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1612031371957" />
   </component>
 </project>

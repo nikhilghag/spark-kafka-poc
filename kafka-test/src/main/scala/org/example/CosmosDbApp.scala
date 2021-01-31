@@ -30,16 +30,28 @@ object CosmosDbApp {
           "Database" -> "SampleDB",
           "Collection" -> "Persons",
           "InferStreamSchema" -> "true",
-          "ChangeFeedQueryName" -> "Departure-Delays",
-          "ChangeFeedStartFromTheBeginning" -> "true"
+          "ChangeFeedQueryName" -> "Test-Query-3",
+          "ReadChangeFeed" -> "true",
+          "ChangeFeedStartFromTheBeginning" -> "true",
+          "RollingChangeFeed" -> "false",
+          "ChangeFeedCheckpointLocation" -> "D:\\checkpoint-folder"
         )
     // Connect via azure-cosmosdb-spark to create Spark DataFrame
 //    val df = spark.read.cosmosDB(readConfig)
 //    df.show()
 
     val df = spark.readStream.format(classOf[CosmosDBSourceProvider].getName).options(readConfig).load()
-    df.writeStream
-      .format("console")
+//    df.writeStream
+//      .format("console")
+//      .start()
+//      .awaitTermination()
+
+    df.selectExpr( "to_json(struct(*)) AS value").
+      writeStream
+      .format("kafka")
+      .option("kafka.bootstrap.servers", "0.0.0.0:9092")
+      .option("topic", "test")
+      .option("checkpointLocation","D:\\checkpoint\\")
       .start()
       .awaitTermination()
   }
